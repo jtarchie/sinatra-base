@@ -12,4 +12,20 @@ describe WebApp do
       last_response.body.should == 'Hello World'
     end
   end
+
+  describe "GET /.json" do
+    before  { get '/.json' }
+
+    it "should be successful" do
+      last_response.should be_ok
+    end
+
+    it "returns json" do
+      JSON.parse(last_response.body).should == {
+        "openstruct" => {
+          "greeting" => "Hello"
+        }
+      }
+    end
+  end
 end

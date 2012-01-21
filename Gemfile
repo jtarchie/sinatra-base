@@ -11,6 +11,8 @@ gem "pg"
 # gem "mysql2"
 gem "em-postgresql-adapter", :git => 'git://github.com/leftbee/em-postgresql-adapter.git'
 gem "thin"
+gem "faraday"
+gem "rabl"
 
 group :test, :development do
   gem "rspec"

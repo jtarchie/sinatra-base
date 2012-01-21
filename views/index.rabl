@@ -1,0 +1,3 @@
+object @greeting
+
+attribute :greeting
