@@ -16,6 +16,7 @@ gem "rabl"
 
 group :test, :development do
   gem "rspec"
+  gem 'sqlite3'
 end
 
 group :test do

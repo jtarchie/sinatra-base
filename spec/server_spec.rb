@@ -28,4 +28,12 @@ describe WebApp do
       }
     end
   end
+
+  describe "when initializing" do
+    context "with ActiveRecord" do
+      it "initializes the database" do
+        ActiveRecord::Base.connection.should_not be_nil
+      end
+    end
+  end
 end
