@@ -9,6 +9,6 @@ Rabl.register!
 
 Dir["./lib/**/*.rb"].each { |f| require f }
 
-database_config = YAML.load_file(File.join(File.dirname(__FILE__),"database.yml"))
+database_config = YAML.load(ERB.new(File.read(File.join(File.dirname(__FILE__), "database.yml"))).result)
 
 ActiveRecord::Base.establish_connection(database_config[ENV['RACK_ENV']])
