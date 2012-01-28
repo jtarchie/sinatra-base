@@ -9,4 +9,13 @@ task :spec do
   end
 end
 
+namespace :db do
+  desc "rollback your DB use STEPS to specify more than 1"
+  task :rollback do
+    steps = (ENV['STEPS'] || 1).to_i
+    ActiveRecord::Migrator.rollback('db/migrate',steps)
+  end
+end
+
+
 task :default => :spec
