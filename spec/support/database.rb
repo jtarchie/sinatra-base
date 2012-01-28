@@ -1,5 +1,5 @@
 require 'database_cleaner'
-require 'database_cleaner/cucumber'
+
 RSpec.configure do |config|
 
   config.before(:suite) do
