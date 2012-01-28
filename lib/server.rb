@@ -2,7 +2,7 @@ require 'sinatra/base'
 require 'sinatra/synchrony'
 
 class WebApp < Sinatra::Base
-  set :views, settings.root + "/../views"
+  set :root, File.join(File.dirname(__FILE__), "..", "/")
   register Sinatra::Synchrony
 
   get '/' do
