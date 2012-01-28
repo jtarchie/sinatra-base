@@ -32,6 +32,7 @@ GEM
     arel (2.2.1)
     builder (3.0.0)
     daemons (1.1.6)
+    database_cleaner (0.7.1)
     diff-lcs (1.1.3)
     em-http-request (1.0.0)
       addressable (>= 2.2.3)
@@ -93,6 +94,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
+  database_cleaner
   em-postgresql-adapter!
   em-synchrony!
   foreman
