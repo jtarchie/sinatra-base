@@ -1,6 +1,5 @@
 require 'sinatra/base'
 require 'sinatra/synchrony'
-require 'faraday'
 
 class WebApp < Sinatra::Base
   set :views, settings.root + "/../views"

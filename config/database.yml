@@ -13,4 +13,3 @@ test:
   pool: 6
   connections: 6
 <% end %>
-

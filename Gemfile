@@ -2,7 +2,6 @@ source :rubygems
 
 gem "sinatra"
 gem "activerecord"
-gem "sinatra-activerecord"
 gem "sinatra-synchrony"
 gem 'em-synchrony', :git     => 'git://github.com/igrigorik/em-synchrony.git',
                     :require => ['em-synchrony',
@@ -11,7 +10,6 @@ gem "pg"
 # gem "mysql2"
 gem "em-postgresql-adapter", :git => 'git://github.com/leftbee/em-postgresql-adapter.git'
 gem "thin"
-gem "faraday"
 gem "rabl"
 
 group :test, :development do
