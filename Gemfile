@@ -1,5 +1,6 @@
 source :rubygems
 
+gem "rake"
 gem "sinatra"
 gem "activerecord"
 gem "sinatra-synchrony"
