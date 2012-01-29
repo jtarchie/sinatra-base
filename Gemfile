@@ -2,6 +2,7 @@ source :rubygems
 
 gem "rake"
 gem "sinatra"
+gem "sinatra-contrib"
 gem "activerecord"
 gem "sinatra-synchrony"
 gem 'em-synchrony', :git     => 'git://github.com/igrigorik/em-synchrony.git',
